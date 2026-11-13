@@ -1,0 +1,21 @@
+<p><b>Fosshine</b> controls the Fossibot F1800 portable power station from your phone, over the station's own Wi-Fi: no cloud, no account and no internet. It is an alternative to the vendor's Fossibot+ app and talks to the station the way that app's offline mode does.</p>
+
+<p>Features:</p>
+
+<ul>
+<li>Charge, time left and battery temperature, with the power coming in (AC, solar) and going out (AC, DC, USB)</li>
+<li>Switches for the AC, DC and USB outputs and the light (on, SOS, strobe)</li>
+<li>Charge power, charge ceiling and discharge floor, DC charging current, UPS or ECO mode</li>
+<li>Timers: screen off, station shutdown and each output's idle-off</li>
+<li>Screen brightness, key sound and output memory</li>
+<li>Stays connected while the app is closed, with the charge and power in a notification and an alert when the battery falls to 20 %</li>
+<li>English and Ukrainian</li>
+</ul>
+
+<p>To connect, turn the station on and tap Connect: the phone joins the station's FOSS_… network and the station connects to the phone. After power-on the station needs a minute or two before it accepts a phone, and the app shows that wait. The station lets in one phone at a time.</p>
+
+<p>The location, nearby devices and notification permissions are all optional. Location is only how Android lets an app read the name of the Wi-Fi network, which carries the station's serial number; the app reads no location. Nearby devices lets it hear over Bluetooth that the station is still starting up; it never connects over Bluetooth.</p>
+
+<p>Fosshine writes to the station only what the Fossibot+ settings screen writes, within that screen's ranges, and every control shows the value the station reports back. It is tested on the F1800. The F3000 uses the same protocol and most likely works too, but nobody has tried it yet; the F2400 is a different platform and does not work.</p>
+
+<p>Fossibot is a trademark of its owner. Fosshine is an independent project, not affiliated with or endorsed by it, and comes with no warranty.</p>

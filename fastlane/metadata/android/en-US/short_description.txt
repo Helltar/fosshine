@@ -1,0 +1,1 @@
+Control a Fossibot F1800 power station over its own Wi-Fi, with no cloud

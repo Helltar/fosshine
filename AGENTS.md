@@ -50,6 +50,9 @@ is dropped when it ends.
 - `StationService` and `StationNotifications` — the `connectedDevice` foreground service that keeps the
   link while the app is closed, its status notification and the low-battery alert.
 - `ui/` — one Compose screen: the connect card until the station dials, the status and settings cards after.
+- `fastlane/metadata/android/en-US/` — the store listing IzzyOnDroid reads: title, descriptions, icon,
+  screenshots. A release adds `changelogs/<versionCode>.txt`, and a feature named in `README.md` is named in
+  `full_description.txt` too.
 - `tools/` — Python helpers for working on the protocol from a PC on the station's AP: `listen.py` (the
   8058 server, logs every frame; with `--cloud`, a stand-in for the vendor's cloud on 5555), `send.py`
   (writes a register through it), `frame.py` and `regs.py` (codec and register map), `state.py` (decodes
