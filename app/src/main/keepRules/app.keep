@@ -1,0 +1,4 @@
+# nothing in the app is reached by name, so r8 needs no keep rule. names stay as they are so that a
+# stack trace from a user reads without a mapping
+
+-dontobfuscate

@@ -15,6 +15,12 @@ with no cloud and no account. It applies to the whole repository; `CLAUDE.md` is
   `ANDROID_KEY_ALIAS` and `ANDROID_KEYSTORE_PASSWORD` are in the environment of that one command, and
   unsigned without them. The password never goes into a file, an argument or a log. `apksigner verify
   --print-certs` on the result shows whose key signed it.
+- The release is shrunk by R8 (`optimization { enable = true }`, names kept by `src/main/keepRules/`), the
+  debug build is not: anything reached by reflection or by name has to be tried in a release build.
+- The release has to rebuild byte for byte from its tag, which IzzyOnDroid checks. That is why the Gradle
+  daemon asks for any JDK 21 with no vendor and no Foojay resolver, the release Kotlin compile is never
+  incremental, and `dependenciesInfo` is off. Two clean `assembleRelease` runs give the same unsigned APK;
+  check that again after touching the build.
 - compileSdk is 36.1, so the Compose BOM stays on `2026.06.01`; 2026.08 and later need compileSdk 37.
 - If a check cannot run, report the exact command and the blocker.
 

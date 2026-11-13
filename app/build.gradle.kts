@@ -41,12 +41,27 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.findByName("release")
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            optimization {
+                // nearly all of the dex is compose and material, little of it used. src/main/keepRules holds
+                // the one rule: names stay, so a stack trace from a user reads without a mapping
+                enable = true
+            }
         }
+    }
+
+    packaging {
+        dex {
+            // stored dex is the default from minSdk 28 on; deflating it makes the apk smaller, at the cost of
+            // the installer unpacking it on the device
+            useLegacyPackaging = true
+        }
+    }
+
+    dependenciesInfo {
+        // the dependency list agp adds to the signing block is encrypted with a key of google's, so nobody
+        // else can check what it holds, and izzyondroid flags an apk that carries it
+        includeInApk = false
+        includeInBundle = false
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -65,4 +80,16 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
     testImplementation(libs.junit)
+}
+
+// a release is always compiled whole. compiled incrementally, the compose compiler takes the stability of a
+// class it does not recompile from the previous build's output instead of inferring it from the source, and
+// the bytecode then differs from a clean build of the same commit, which is what a rebuilder compares with.
+// it is set after evaluation because the kotlin plugin switches the flag back on until then
+afterEvaluate {
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+        if (name.contains("Release")) {
+            incremental = false
+        }
+    }
 }
