@@ -11,6 +11,10 @@ with no cloud and no account. It applies to the whole repository; `CLAUDE.md` is
   Run it before finishing a code change unless the change is docs-only.
 - `adb install -r app/build/outputs/apk/debug/app-debug.apk` puts it on a connected phone. A new
   `applicationId` is a new app: uninstall the old one first, or both will fight over port 8058.
+- `./gradlew assembleRelease` builds the release APK, signed when `ANDROID_KEYSTORE` (the keystore's path),
+  `ANDROID_KEY_ALIAS` and `ANDROID_KEYSTORE_PASSWORD` are in the environment of that one command, and
+  unsigned without them. The password never goes into a file, an argument or a log. `apksigner verify
+  --print-certs` on the result shows whose key signed it.
 - compileSdk is 36.1, so the Compose BOM stays on `2026.06.01`; 2026.08 and later need compileSdk 37.
 - If a check cannot run, report the exact command and the blocker.
 

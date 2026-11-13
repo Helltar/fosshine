@@ -23,8 +23,24 @@ android {
         compose = true
     }
 
+    // a release is signed only when the environment names a keystore; without one it comes out unsigned,
+    // so the project builds for anyone
+    val keystore = System.getenv("ANDROID_KEYSTORE")
+    if (keystore != null) {
+        signingConfigs {
+            create("release") {
+                storeFile = file(keystore)
+                storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("ANDROID_KEY_ALIAS")
+                // a PKCS12 keystore has one password for the store and the key
+                keyPassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig = signingConfigs.findByName("release")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
