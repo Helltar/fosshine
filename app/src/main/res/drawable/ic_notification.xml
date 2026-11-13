@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- the wave filling a 24dp status bar icon, a little bolder so it holds up at that size -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="54"
+    android:viewportHeight="54">
+    <group
+        android:translateX="-27"
+        android:translateY="-27">
+        <path
+            android:pathData="M33,54 C37.6,37.6 48.5,37.6 54,54 C59.5,70.4 70.4,70.4 75,54"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="8"
+            android:strokeLineCap="round" />
+    </group>
+</vector>

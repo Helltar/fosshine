@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Fosshine</string>
+    <string name="title" translatable="false">Fossibot</string>
+    <string name="title_f1800" translatable="false">Fossibot F1800</string>
+    <string name="title_f3000" translatable="false">Fossibot F3000</string>
+
+    <string name="link_connected">Connected</string>
+    <string name="link_stale">No data</string>
+    <string name="link_waiting">Waiting for station</string>
+    <string name="link_stopped">Stopped</string>
+    <string name="link_failed">Port error</string>
+
+    <string name="connect_idle">Connect to your station</string>
+    <string name="connect_idle_hint">Turn it on and tap Connect</string>
+    <string name="connect_starting">The station is starting up</string>
+    <string name="connect_starting_hint">It connects once the Bluetooth icon blinks on it</string>
+    <string name="connect_starting_tap">Tap Connect, then wait for the Bluetooth icon to blink on it</string>
+    <string name="connect_starting_elapsed">Waiting %1$d:%2$02d</string>
+    <string name="connect_joining">Joining the station\'s Wi-Fi</string>
+    <string name="connect_joining_hint">If a list opens, pick FOSS_…</string>
+    <string name="connect_waiting">Waiting for the station</string>
+    <string name="connect_waiting_hint">It connects by itself</string>
+    <string name="connect_ready">Connecting…</string>
+    <string name="connect_ready_hint">The Bluetooth icon blinks on the station: it is ready</string>
+    <string name="connect_failed">Couldn\'t join the station\'s Wi-Fi</string>
+    <string name="connect_failed_hint">Is the station on and nearby? It lets in one phone at a time</string>
+    <string name="connect_step_1">Turn the station on</string>
+    <string name="connect_step_2">Tap Connect</string>
+    <string name="connect_step_3">Wait for it to connect</string>
+    <string name="connect_button">Connect</string>
+    <string name="connect_retry">Try again</string>
+    <string name="connect_help">Not connecting?</string>
+    <string name="connect_trouble">Leave the Fossibot+ app\'s offline mode and disconnect other phones from the station: it lets in one phone at a time.</string>
+    <string name="connect_permissions">Location lets the app read the station\'s serial number from its Wi-Fi name, and Nearby devices lets it see that the station is still starting up. Both are optional.</string>
+
+    <string name="charging">Charging</string>
+    <string name="discharging">Discharging</string>
+    <string name="remaining">%1$d h %2$d min left</string>
+    <string name="remaining_max">Over %1$d h left</string>
+    <string name="battery_temp">Battery %1$d °C</string>
+
+    <string name="input">Input</string>
+    <string name="output">Output</string>
+    <string name="source_ac">Grid</string>
+    <string name="source_pv">Solar</string>
+    <string name="out_ac" translatable="false">AC</string>
+    <string name="out_dc" translatable="false">DC</string>
+    <string name="out_usb" translatable="false">USB</string>
+
+    <string name="outputs">Outputs</string>
+    <string name="ac_scheduled">on by schedule</string>
+    <string name="light">Light</string>
+    <string name="light_off">Off</string>
+    <string name="light_on">On</string>
+    <string name="light_sos">SOS</string>
+    <string name="light_strobe">Strobe</string>
+
+    <string name="charging_settings">Charging</string>
+    <string name="charge_power_limit">Charging power</string>
+    <string name="charge_upper_limit">Charge up to</string>
+    <string name="discharge_lower_limit">Discharge down to</string>
+    <string name="dc_charge_current">DC charging current</string>
+    <string name="grid_charging_paused">Grid charging is paused by the station\'s schedule until its next charge slot. The schedule is set in the vendor\'s app.</string>
+    <string name="mode">Mode</string>
+    <string name="mode_ups" translatable="false">UPS</string>
+    <string name="mode_eco" translatable="false">ECO</string>
+
+    <string name="timers">Auto off</string>
+    <string name="screen_off_time">Screen off</string>
+    <string name="screen_off_hint">Any button lights the screen again.</string>
+    <string name="screen_always_on">Always on</string>
+    <string name="shutdown_time">Station shutdown</string>
+    <string name="shutdown_hint">Powers the station off once every output has been off this long.</string>
+    <string name="ac_idle_off">AC with no load</string>
+    <string name="dc_idle_off">DC with no load</string>
+    <string name="usb_idle_off">USB with no load</string>
+    <string name="idle_off_hint">An output with no load and no button presses turns itself off after the set time.</string>
+    <string name="never">Never</string>
+    <string name="duration_seconds">%1$d s</string>
+    <string name="duration_minutes">%1$d min</string>
+    <string name="duration_hours">%1$d h</string>
+    <string name="confirm_never_shutdown">If you forget to turn the station off, the battery may run flat.</string>
+    <string name="confirm_never_idle">The output will never turn off by itself and can drain the battery.</string>
+    <string name="confirm">Set</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="device">Device</string>
+    <string name="screen_brightness">Screen brightness</string>
+    <string name="key_sound">Button sound</string>
+    <string name="output_memory">Output memory</string>
+    <string name="output_memory_hint">After a flat battery is recharged, outputs that were on come back on.</string>
+    <string name="inverter_temp">Inverter</string>
+    <string name="pv_energy">Solar energy, total</string>
+    <string name="serial">Serial number</string>
+    <string name="firmware">Firmware (DC)</string>
+    <string name="pcs" translatable="false">PCS</string>
+    <string name="bms" translatable="false">BMS</string>
+
+    <string name="write_failed">The station did not take the command</string>
+    <string name="battery_empty">The battery is empty, commands are not sent</string>
+
+    <string name="disconnect">Disconnect</string>
+    <string name="channel_status">Station status</string>
+    <string name="channel_alerts">Station alerts</string>
+    <string name="notif_waiting">Waiting for the station</string>
+    <string name="notif_no_data">No data from the station</string>
+    <string name="notif_power">In %1$d W · Out %2$d W</string>
+    <string name="notif_stop">Stop</string>
+    <string name="alert_low_title">Battery low: %1$d%%</string>
+    <string name="alert_low_text">The station is running down. Plug it in or switch off what you do not need.</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_connected">Підключено</string>
+    <string name="link_stale">Немає даних</string>
+    <string name="link_waiting">Чекаю станцію</string>
+    <string name="link_stopped">Зупинено</string>
+    <string name="link_failed">Помилка порту</string>
+
+    <string name="connect_idle">Підключи станцію</string>
+    <string name="connect_idle_hint">Увімкни її й натисни «Підключити»</string>
+    <string name="connect_starting">Станція запускається</string>
+    <string name="connect_starting_hint">Вона підключиться, коли на ній замигає значок Bluetooth</string>
+    <string name="connect_starting_tap">Натисни «Підключити» й зачекай, поки на ній замигає значок Bluetooth</string>
+    <string name="connect_starting_elapsed">Чекаю %1$d:%2$02d</string>
+    <string name="connect_joining">Підключаюсь до Wi-Fi станції</string>
+    <string name="connect_joining_hint">Якщо відкриється список, обери FOSS_…</string>
+    <string name="connect_waiting">Чекаю на станцію</string>
+    <string name="connect_waiting_hint">Вона підключиться сама</string>
+    <string name="connect_ready">Підключаюсь…</string>
+    <string name="connect_ready_hint">На станції мигає значок Bluetooth: вона готова</string>
+    <string name="connect_failed">Не вдалося підключитися до Wi-Fi станції</string>
+    <string name="connect_failed_hint">Станція ввімкнена й поруч? Вона пускає лише один телефон</string>
+    <string name="connect_step_1">Увімкни станцію</string>
+    <string name="connect_step_2">Натисни «Підключити»</string>
+    <string name="connect_step_3">Зачекай, поки вона підключиться</string>
+    <string name="connect_button">Підключити</string>
+    <string name="connect_retry">Спробувати ще раз</string>
+    <string name="connect_help">Не підключається?</string>
+    <string name="connect_trouble">Вийди з офлайн-режиму застосунку Fossibot+ і від\'єднай від станції інші телефони: вона пускає лише один.</string>
+    <string name="connect_permissions">Геолокація потрібна, щоб прочитати серійник станції з назви її Wi-Fi, а «Пристрої поблизу» — щоб бачити, що станція ще запускається. Обидва дозволи необов\'язкові.</string>
+
+    <string name="charging">Заряджається</string>
+    <string name="discharging">Розряджається</string>
+    <string name="remaining">Залишилось %1$d год %2$d хв</string>
+    <string name="remaining_max">Залишилось понад %1$d год</string>
+    <string name="battery_temp">Батарея %1$d °C</string>
+
+    <string name="input">Вхід</string>
+    <string name="output">Вихід</string>
+    <string name="source_ac">Мережа</string>
+    <string name="source_pv">Сонце</string>
+
+    <string name="outputs">Виходи</string>
+    <string name="ac_scheduled">увімкнено за розкладом</string>
+    <string name="light">Ліхтар</string>
+    <string name="light_off">Вимк</string>
+    <string name="light_on">Світло</string>
+    <string name="light_sos">SOS</string>
+    <string name="light_strobe">Строб</string>
+
+    <string name="charging_settings">Заряд</string>
+    <string name="charge_power_limit">Потужність заряду</string>
+    <string name="charge_upper_limit">Заряджати до</string>
+    <string name="discharge_lower_limit">Розряджати до</string>
+    <string name="dc_charge_current">Струм DC-заряду</string>
+    <string name="grid_charging_paused">Заряд від мережі призупинено розкладом станції до наступного вікна заряду. Розклад налаштовується в застосунку виробника.</string>
+    <string name="mode">Режим</string>
+
+    <string name="timers">Автовимкнення</string>
+    <string name="screen_off_time">Вимкнення екрана</string>
+    <string name="screen_off_hint">Будь-яка кнопка знову вмикає екран.</string>
+    <string name="screen_always_on">Завжди увімкнений</string>
+    <string name="shutdown_time">Вимкнення станції</string>
+    <string name="shutdown_hint">Вимикає станцію через заданий час, коли всі виходи вимкнені.</string>
+    <string name="ac_idle_off">AC без навантаження</string>
+    <string name="dc_idle_off">DC без навантаження</string>
+    <string name="usb_idle_off">USB без навантаження</string>
+    <string name="idle_off_hint">Вихід без навантаження й без натискань вимикається сам через заданий час.</string>
+    <string name="never">Ніколи</string>
+    <string name="duration_seconds">%1$d с</string>
+    <string name="duration_minutes">%1$d хв</string>
+    <string name="duration_hours">%1$d год</string>
+    <string name="confirm_never_shutdown">Якщо забути вимкнути станцію, батарея може розрядитися.</string>
+    <string name="confirm_never_idle">Вихід ніколи не вимкнеться сам і може розрядити батарею.</string>
+    <string name="confirm">Встановити</string>
+    <string name="cancel">Скасувати</string>
+
+    <string name="device">Пристрій</string>
+    <string name="screen_brightness">Яскравість екрана</string>
+    <string name="key_sound">Звук кнопок</string>
+    <string name="output_memory">Пам\'ять виходів</string>
+    <string name="output_memory_hint">Після зарядки розрядженої батареї виходи, що були ввімкнені, вмикаються знову.</string>
+    <string name="inverter_temp">Інвертор</string>
+    <string name="pv_energy">Сонячна енергія, всього</string>
+    <string name="serial">Серійний номер</string>
+    <string name="firmware">Прошивка (DC)</string>
+
+    <string name="write_failed">Станція не прийняла команду</string>
+    <string name="battery_empty">Батарея розряджена, команди не надсилаються</string>
+
+    <string name="disconnect">Відключитись</string>
+    <string name="channel_status">Стан станції</string>
+    <string name="channel_alerts">Сповіщення станції</string>
+    <string name="notif_waiting">Чекаю станцію</string>
+    <string name="notif_no_data">Немає даних від станції</string>
+    <string name="notif_power">Вхід %1$d W · Вихід %2$d W</string>
+    <string name="notif_stop">Зупинити</string>
+    <string name="alert_low_title">Низький заряд: %1$d%%</string>
+    <string name="alert_low_text">Станція сідає. Підключи її до мережі або вимкни зайве.</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the system splash shows the icon's mark on its own; this puts the icon's blue disc back behind it -->
+    <style name="Theme.Fosshine" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
+    </style>
+</resources>

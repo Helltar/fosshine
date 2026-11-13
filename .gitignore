@@ -1,0 +1,15 @@
+.claude/
+.gradle/
+.idea/
+.kotlin/
+
+build/
+notes/
+captures/
+vendor-apps/
+inspections/
+__pycache__/
+
+*.iml
+CLAUDE.local.md
+/local.properties
