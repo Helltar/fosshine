@@ -20,7 +20,9 @@ with no cloud and no account. It applies to the whole repository; `CLAUDE.md` is
 - The release has to rebuild byte for byte from its tag, which IzzyOnDroid checks. That is why the Gradle
   daemon asks for any JDK 21 with no vendor and no Foojay resolver, the release Kotlin compile is never
   incremental, and `dependenciesInfo` is off. Two clean `assembleRelease` runs give the same unsigned APK;
-  check that again after touching the build.
+  check that again after touching the build. The APK records the commit it was built from
+  (`META-INF/version-control-info.textproto`), so a release is built from the tagged commit itself: an APK
+  built one commit earlier differs even when no code changed.
 - compileSdk is 36.1, so the Compose BOM stays on `2026.06.01`; 2026.08 and later need compileSdk 37.
 - If a check cannot run, report the exact command and the blocker.
 
