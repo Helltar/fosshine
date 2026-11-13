@@ -4,6 +4,7 @@
 .kotlin/
 
 build/
+data/
 notes/
 captures/
 vendor-apps/
